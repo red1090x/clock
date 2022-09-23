@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap");
+
+::selection {
+  background-color: #e8eaed;
+  color: #121212;
+}
+
+html {
+  font-family: "Roboto Slab", sans-serif;
+}
+
+body {
+  background-color: #e8eaed;
+  color: #121212;
+  padding: 180px;
+  padding-left: 200px;
+  padding-right: 200px;
+  text-align: center;
+}
+
+.bg-div {
+  background-color: #121212;
+  color: #e8eaed;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.arrow {
+  font-size: 30px;
+  position: fixed;
+  bottom: 10px;
+  left: 20px;
+  cursor: pointer;
+  color: #121212;
+  transition: 250ms;
+}
+
+.arrow:hover {
+  color: #8ab4f8;
+}
+
+/* --- Code for dark mode users --- */
+
+@media (prefers-color-scheme: dark) {
+  ::selection {
+    background-color: #121212;
+    color: #e8eaed;
+  }
+
+  body {
+    background-color: #121212;
+    color: #e8eaed;
+  }
+
+  .bg-div {
+    background-color: #e8eaed;
+    color: #121212;
+  }
+
+  .arrow {
+    color: #e8eaed;
+  }
+}
